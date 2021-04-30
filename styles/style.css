@@ -176,3 +176,31 @@ header {
   cursor: pointer;
   margin-top: 30px;
 }
+
+
+/* Reviews Section */ 
+
+.reviews-section {
+  width: 100%;
+  height: 450px;
+  padding-top: 95px;
+  background: #fff;
+}
+
+.section-container {
+  width: 1110px;
+  height: 228px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.section-container p {
+  color: var(--light-gray-100);
+  margin: 10px 0px;
+}
+
+.section-container h1 {
+  color: #000336;
+}
