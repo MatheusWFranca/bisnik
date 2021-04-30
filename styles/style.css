@@ -3,6 +3,7 @@
   --dark-gray: #5A6473;
   --light-gray-100: #7D8589;
   --light-gray-300: #4F5361;
+  --light-background: #E6F0FF;
 }
 
 * {
@@ -27,10 +28,10 @@ a {
 body {
   width: 100vw;
   height: 100vh;
+  background: var(--light-background)
 }
 
 header {
-  width: 1440px;
   height: 110px;
   background-color: #E6F0FF;
   display: flex;
@@ -38,17 +39,17 @@ header {
 }
 
 .container {
-  width: 1440px;
+  width: 1110px;
 }
-
 
 .navbar {
   width: 1110px;
   height: 40px;
   margin: 0 auto;
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 
 .logo a {
@@ -76,9 +77,9 @@ header {
 }
 
 .navbar-left {
-  flex: 1;
   text-align:right;
   padding: 10px;
+  justify-content:flex-end;
 }
 
 .submit {
@@ -93,7 +94,6 @@ header {
   color: #fff;
   transition: .2s;
 }
-
 
 .btn {
   font-size: 14px;
@@ -111,4 +111,68 @@ header {
 
 .btn:hover {
   filter: brightness(0.9);
+}
+
+
+@media (max-width: 768px) {
+  header {
+    width: 100%;
+  }
+  .navbar {
+    flex-direction: column-reverse;
+  }
+
+  .menu ul {
+    flex-direction: column;
+    order: 2;
+  }
+
+  .logo a {
+    padding: 10px;
+    order: 3;
+  }
+
+  .navbar-left {
+    order: 1;
+  }
+}
+
+/* Main */ 
+
+
+.home {
+  margin: 0 auto;
+  height: 620px;
+  display: flex;
+}
+
+.left-content {
+  max-width: 50%;
+  margin: 120px 0px;
+  flex: 2;
+}
+
+.left-content p {
+  font-size: 18px;
+  color: var(--light-gray-100);
+  margin: 15px 0px;
+  line-height: 30px;
+  letter-spacing: .5px;
+}
+
+.left-content h1 {
+  font-size: 60px;
+  font-weight: bold;
+  color: #000336;
+  line-height: 60px;
+}
+
+.left-content button {
+  background-color: #000336;
+  color: #fff;
+  padding: 20px 40px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  margin-top: 30px;
 }
