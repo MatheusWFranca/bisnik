@@ -76,7 +76,7 @@ header {
   color: #0F1B4C;
 }
 
-.navbar-left {
+.navbar-right {
   text-align: right;
   padding: 10px;
   justify-content: flex-end;
@@ -133,7 +133,7 @@ header {
     order: 3;
   }
 
-  .navbar-left {
+  .navbar-right {
     order: 1;
   }
 }
@@ -170,12 +170,15 @@ header {
 
 .left-content button {
   background-color: #000336;
-  color: #fff;
   padding: 20px 40px;
   border: none;
   border-radius: 10px;
   cursor: pointer;
   margin-top: 30px;
+}
+
+.left-content a {
+  color: #fff;
 }
 
 
@@ -304,9 +307,7 @@ header {
   font-size: 14px;
   color: #fff;
 
-  width: 178px;
-  height: 40px;
-  padding: 10px 20px;
+  padding: 20px 40px;
   text-align: center;
 
   background-color: var(--dark-blue);
