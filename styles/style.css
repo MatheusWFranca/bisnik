@@ -1,5 +1,6 @@
 :root {
   --dark-blue: #0F1B4C;
+  --light-blue: #063183;
   --dark-gray: #5A6473;
   --light-gray-100: #7D8589;
   --light-gray-300: #4F5361;
@@ -478,7 +479,7 @@ header {
 .features-banner {
   width: 90%;
   height: 350px;
-  background-color: var(--dark-blue);
+  background-color: var(--light-blue);
   border-radius: 30px;
   margin: 60px auto;
   display: flex;
@@ -505,7 +506,7 @@ header {
 
 .features-title a {
   background-color: #fff;
-  color: var(--dark-blue);
+  color: var(--light-blue);
   border-radius: 10px;
   padding: 20px 50px;
 }
