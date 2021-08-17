@@ -51,7 +51,6 @@ header {
   height: 40px;
   margin: 0 auto;
   display: flex;
-  flex-wrap: wrap;
   align-items: center;
   justify-content: space-around;
 }
@@ -165,7 +164,7 @@ header {
 /* Reviews Section */
 
 .reviews-section {
-  padding-top: 95px;
+  padding-top: 50px;
   background: #fff;
 }
 
@@ -194,7 +193,7 @@ header {
 }
 
 .how-things {
-  width: 685px;
+  max-width: 685px;
   margin: 0 auto;
 }
 
@@ -391,30 +390,22 @@ header {
   background-color: #fff;
 }
 
-.features-container {
+.feature {
   max-width: 960px;
-  display: flex;
-  justify-content: flex-start;
-  align-content: flex-start;
-  flex-wrap: wrap;
+  margin-top: 10px;
 }
 
 .img-content {
   display: flex;
-  flex: 1;
-  justify-content: center;
+  justify-content: space-evenly;
+  margin-bottom: 20px;
   align-items: center;
-}
-
-.img-content img {
-  width: 600px;
 }
 
 
 .features-content {
   color: #fff;
-  flex: 1;
-  align-self: center;
+  max-width: 50%;
 }
 
 .features-content h2 {
@@ -494,16 +485,17 @@ footer {
 }
 
 .container-footer {
-  width: 960px;
-  height: 350px;
+  max-width: 960px;
+  gap: 20px;
+  flex-wrap: wrap;
   display: flex;
-  gap: 130px;
-  margin: 0 auto;
+  justify-content: space-evenly;
+  align-items: center;
 }
 
 .container-footer h2 {
   color: #1C1C1D;
-  margin-bottom: 50px; 
+  margin-bottom:20px; 
 }
 
 .container-footer li {
@@ -518,6 +510,18 @@ footer {
 @media screen and (max-width: 768px) {
   .container {
     padding: 15px;
+  }
+  
+  .navbar {
+    flex-wrap: wrap;
+  }
+
+  .navbar-right {
+    margin-top: 15px;
+  }
+
+  .logo {
+    margin-bottom: 20px;
   }
 
   .home {
@@ -565,11 +569,44 @@ footer {
   }
 
   .features {
+    max-width: 960px;
     flex-wrap: wrap;
+  }
+
+  .img-content {
+    flex-wrap: wrap;
+    margin-bottom: 50px;
+  }
+
+  .features-content {
+    max-width: 100%;
+  }
+
+  .features-content h2 {
+    text-align: center;
+    font-size: 24px;
+  }
+
+  .features-content p {
+    text-align: center;
+    font-size: 14px;
   }
 
   .properties {
     height: 1500px;
   }
 
+  .countdown dd {
+    font-size: 26px;
+    margin: 0px 10px 0px;
+  }
+
+  .features-title a {
+    font-size: 14px;
+    padding: 10px 15px;
+  }
+
+  .ilustration {
+    max-width: 100%;
+  }
 }
